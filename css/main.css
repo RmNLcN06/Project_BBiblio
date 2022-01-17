@@ -1,0 +1,21 @@
+:root {
+    /* Font Colors */
+    --txt-clr-white: rgba(255, 255, 255, 1);
+    --txt-clr-black: rgba(0, 0, 0, 1);
+
+    /* Page Colors */
+    --page-clr-bckgrd: #CED4DA;
+    --page-clr-hdr: #d85a0e;
+}
+
+.test {
+    width: 80%;
+    height: 400px;
+    background-color: var(--page-clr-hdr);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
