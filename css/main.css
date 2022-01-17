@@ -13,6 +13,7 @@
     --page-clr-btn: #DDA812;
 }
 
+/****************************************************************/
 
 * {
     margin: 0;
@@ -29,6 +30,14 @@ header {
     background-color: var(--page-clr-hdr);
     height: 120px;
 }
+
+section {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+/**************************************************************/
 
 header a:first-child {
     color: var(--txt-clr-white);
@@ -53,6 +62,11 @@ header a:nth-child(2) {
 header i {
     font-size: 30px;
     color: var(--txt-clr-white);
+    transition: 0.5s;
+}
+
+header i:hover {
+    color: var(--txt-clr-black);
 }
 
 ul {
@@ -82,4 +96,23 @@ ul li a:hover {
     color: var(--page-clr-btn);
     background-color: var(--txt-clr-white);
     border-radius: 5px;
+}
+
+/*******************************************************************/
+
+h1 {
+    margin: 50px 0px;
+    text-align: center;
+}
+
+.card {
+    width: 465px;
+    height: 350px;
+    border: 2px solid red;
+    display: inline-block;
+}
+
+.card img {
+    width: 462px;
+    height: 200px;
 }
