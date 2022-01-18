@@ -189,6 +189,18 @@ h4 {
     display: inline;
 }
 
+.wrapper input[type="text"], .wrapper input[type="password"] {
+    display: inline-block;
+}
+
+.wrapper .size-field {
+    width: 120px;
+}
+
+.wrapper .size-margin {
+    margin-left: 180px;
+}
+
 .wrapper input[type="button"] {
     width: 10%;
     margin-top: 20px;
