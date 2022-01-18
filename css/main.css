@@ -138,7 +138,55 @@ h4 {
 }
 
 .wrapper a {
-    margin: 0px 350px;
+    margin: 0px 364px;
+    text-decoration: none;
+    color: maroon;
+    opacity: 0.4;
+    transition: var(--time-anim);
+}
+
+.wrapper a:hover {
+    opacity: 1;
+}
+
+.wrapper fieldset {
+    width: 100%;
+    border: 1px solid var(--page-clr-btn);
+    border-radius: 5px;
+}
+
+.wrapper legend {
+    text-align: center;
+    padding: 0px 15px;
+}
+
+.wrapper input, .wrapper textarea, .wrapper p {
+    width: 300px;
+    display: block;
+    margin: 15px auto;
+}
+
+.wrapper p {
+    font-size: 12px;
+}
+
+.wrapper input[type="button"] {
+    width: 10%;
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px solid maroon;
+    color: maroon;
+    opacity: 0.4;
+    transition: var(--time-anim);
+}
+
+.wrapper input[type="button"]:hover {
+    opacity: 1;
+    color: var(--txt-clr-white);
+    background-color: maroon;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
 }
 
 .card {
@@ -188,10 +236,11 @@ h4 {
 }
 
 .card a:hover, .link a:hover {
-    border: 2px solid maroon;
+    background-color: maroon;
+    color: var(--txt-clr-white);
     padding: 5px;
     border-radius: 5px;
-    opacity: 1;
+    opacity: 0.8;
 }
 
 .link {
