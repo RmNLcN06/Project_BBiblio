@@ -33,6 +33,7 @@ header {
 
 section {
     width: 90%;
+    height: 600px;
     margin: 0 auto;
 }
 
@@ -106,13 +107,69 @@ h1 {
 }
 
 .card {
-    width: 465px;
-    height: 350px;
+    width: 350px;
+    height: 450px;
     border: 2px solid red;
-    display: inline-block;
+    float: left;
+    margin: 0 110px;
 }
 
 .card img {
-    width: 462px;
+    width: 347px;
     height: 200px;
+}
+
+.card h3 {
+    text-align: center;
+    font-family: var(--txt-font-subtitle);
+    color: maroon;
+    opacity: 0.4;
+}
+
+.card p {
+    text-align: justify;
+    padding: 10px 10px;
+}
+
+.news a {
+    position: absolute;
+    /* top: 120%; */
+    border: 2px solid maroon;
+    opacity: 0.4;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0px 105px;
+    transition: 0.5s;
+}
+
+.actu a {
+    position: absolute;
+    /* top: 260%; */
+    border: 2px solid maroon;
+    opacity: 0.4;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0px 105px;
+    transition: 0.5s;
+}
+
+.card a:hover, .link a:hover {
+    border: 2px solid maroon;
+    padding: 5px;
+    border-radius: 5px;
+    opacity: 1;
+}
+
+.link {
+    margin: 0px 250px;
+    padding-bottom: 100px;
+}
+
+.link a {
+    text-decoration: none;
+    border: 2px solid maroon;
+    opacity: 0.4;
+    margin: 0 250px;
+    padding: 10px;
+    transition: 0.5s;
 }
