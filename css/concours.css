@@ -80,12 +80,6 @@ header i:hover {
     color: var(--txt-clr-black);
 }
 
-.active {
-    color: var(--page-clr-hdr);
-    background-color: var(--txt-clr-black);
-    border-radius: 5px;
-}
-
 ul.menu {
     height: 45px;
     padding: 0px 150px; 
@@ -176,19 +170,15 @@ h1 {
 }
 
 .link {
-    margin: 0px 80px;
+    margin: 0px 250px;
     padding-bottom: 100px;
-}
-
-.link.participation {
-    margin: 0px 300px;
 }
 
 .link a {
     text-decoration: none;
     border: 2px solid maroon;
     opacity: 0.4;
-    margin: 0 180px;
+    margin: 0 250px;
     padding: 10px;
     transition: var(--time-anim);
 }
