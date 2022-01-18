@@ -37,7 +37,7 @@ header {
 
 section {
     width: 90%;
-    height: 600px;
+    /* height: 600px; */
     margin: 0 auto;
 }
 
@@ -163,11 +163,30 @@ h4 {
 .wrapper input, .wrapper textarea, .wrapper p {
     width: 300px;
     display: block;
-    margin: 15px auto;
+    margin: 30px auto;
 }
 
-.wrapper p {
+.wrapper p, .wrapper label {
     font-size: 12px;
+    text-align: center;
+}
+
+.wrapper input[type="radio"] {
+    display: inline;
+    margin-left: 80px ;
+    width: 50px;
+}
+
+.wrapper input.mg-lf-ft {
+    margin-left: 350px;
+}
+
+.wrapper input.mg-lf-sd {
+    margin-left: 250px;
+}
+
+.wrapper label {
+    display: inline;
 }
 
 .wrapper input[type="button"] {
