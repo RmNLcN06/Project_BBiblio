@@ -116,17 +116,37 @@ ul.menu li a:hover {
 
 /*******************************************************************/
 /*Sections Style */
-h1 {
-    margin: 50px 0px;
+h1, h3 {
+    margin: 25px 0px;
     text-align: center;
+}
+
+h4 {
+    text-align: center;
+    color: maroon;
+}
+
+.wrapper {
+    border: 2px solid var(--page-clr-hdr);
+    margin: 40px 300px;
+    padding: 20px 40px;
+}
+
+.wrapper li {
+    text-align: justify;
+    margin: 20px 0px;
+}
+
+.wrapper a {
+    margin: 0px 350px;
 }
 
 .card {
     width: 350px;
     height: 450px;
-    border: 2px solid red;
+    border: 2px solid var(--page-clr-hdr);
     float: left;
-    margin: 0 110px;
+    margin: 0 38px;
 }
 
 .card img {
@@ -148,7 +168,6 @@ h1 {
 
 .news a {
     position: absolute;
-    /* top: 120%; */
     border: 2px solid maroon;
     opacity: 0.4;
     text-decoration: none;
