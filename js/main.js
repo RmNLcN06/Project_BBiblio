@@ -12,25 +12,18 @@ var buttonSaveSecond = document.getElementsByClassName("save")[2];
 var buttonSaveThird = document.getElementsByClassName("save")[3];
 var buttonSaveForth = document.getElementsByClassName("save")[4];
 
-var totalValues = document.getElementsByClassName("total")[0];
-
 var statutZero = document.getElementsByClassName("statut")[0];
 var statutFirst = document.getElementsByClassName("statut")[1];
 var statutSecond = document.getElementsByClassName("statut")[2];
 var statutThird = document.getElementsByClassName("statut")[3];
 var statutForth = document.getElementsByClassName("statut")[4];
 
-console.log(select);
-console.log(option);
-console.log(input);
+var totalValuesZero = document.getElementsByClassName("total")[0];
+var totalValuesFirst = document.getElementsByClassName("total")[1];
+var totalValuesSecond = document.getElementsByClassName("total")[2];
+var totalValuesThird = document.getElementsByClassName("total")[3];
+var totalValuesForth = document.getElementsByClassName("total")[4];
 
-// console.log(selectNumber);
-// console.log(selectStyles);
-// console.log(selectIllustrations);
-// console.log(selectMisePage);
-// console.log(selectEmotion);
-// console.log(buttonSave);
-// console.log(totalValues);
 
 buttonSaveZero.addEventListener("click", changeStatutZero);
 buttonSaveFirst.addEventListener("click", changeStatutFirst);
@@ -38,6 +31,67 @@ buttonSaveSecond.addEventListener("click", changeStatutSecond);
 buttonSaveThird.addEventListener("click", changeStatutThird);
 buttonSaveForth.addEventListener("click", changeStatutForth);
 
+// buttonSaveZero.addEventListener("click", saveValues);
+
+function saveValuesZero() {
+    var total;
+    var values = [select[0].value, select[1].value, select[2].value, select[3].value];
+
+    total = (parseInt(values[0]) + 
+            parseInt(values[1]) + 
+            parseInt(values[2]) + 
+            parseInt(values[3])) / values.length; 
+
+    totalValuesZero.innerHTML = total + " / 10";
+}
+
+function saveValuesFirst() {
+    var total;
+    var values = [select[4].value, select[5].value, select[6].value, select[7].value];
+
+    total = (parseInt(values[0]) + 
+            parseInt(values[1]) + 
+            parseInt(values[2]) + 
+            parseInt(values[3])) / values.length; 
+
+    totalValuesFirst.innerHTML = total + " / 10";
+}
+
+function saveValuesSecond() {
+    var total;
+    var values = [select[8].value, select[9].value, select[10].value, select[11].value];
+
+    total = (parseInt(values[0]) + 
+            parseInt(values[1]) + 
+            parseInt(values[2]) + 
+            parseInt(values[3])) / values.length; 
+
+    totalValuesSecond.innerHTML = total + " / 10";
+}
+
+function saveValuesThird() {
+    var total;
+    var values = [select[12].value, select[13].value, select[14].value, select[15].value];
+
+    total = (parseInt(values[0]) + 
+            parseInt(values[1]) + 
+            parseInt(values[2]) + 
+            parseInt(values[3])) / values.length; 
+
+    totalValuesThird.innerHTML = total + " / 10";
+}
+
+function saveValuesForth() {
+    var total;
+    var values = [select[16].value, select[17].value, select[18].value, select[19].value];
+
+    total = (parseInt(values[0]) + 
+            parseInt(values[1]) + 
+            parseInt(values[2]) + 
+            parseInt(values[3])) / values.length; 
+
+    totalValuesForth.innerHTML = total + " / 10";
+}
 
 function changeStatutZero() {
     if(select[0].options[0].selected == true || select[1].options[0].selected == true || select[2].options[0].selected == true || select[3].options[0].selected == true) {
@@ -48,6 +102,7 @@ function changeStatutZero() {
         statutZero.classList.remove("progress");
         statutZero.classList.add("complete");
         statutZero.innerHTML = "Complet";
+        saveValuesZero();
     }
 }  
 
@@ -61,6 +116,7 @@ function changeStatutFirst() {
         statutFirst.classList.remove("progress");
         statutFirst.classList.add("complete");
         statutFirst.innerHTML = "Complet";
+        saveValuesFirst();
     }
 }  
 
@@ -73,6 +129,7 @@ function changeStatutSecond() {
         statutSecond.classList.remove("progress");
         statutSecond.classList.add("complete");
         statutSecond.innerHTML = "Complet";
+        saveValuesSecond();
     }
 }  
 
@@ -85,6 +142,7 @@ function changeStatutThird() {
         statutThird.classList.remove("progress");
         statutThird.classList.add("complete");
         statutThird.innerHTML = "Complet";
+        saveValuesThird();
     }
 }  
 
@@ -97,21 +155,9 @@ function changeStatutForth() {
         statutForth.classList.remove("progress");
         statutForth.classList.add("complete");
         statutForth.innerHTML = "Complet";
+        saveValuesForth();
     }
 }  
 
+/***************************************************************************/
 
-// buttonSave.addEventListener("click", saveValues);
-
-// function saveValues() {
-//     var total;
-
-//     for(i = 0 ; i < selectNumber.length ; i++) {
-//         total = parseInt(selectStyles[i].options[i].value) + 
-//                 parseInt(selectIllustrations[i].options[i].value) +
-//                 parseInt(selectMisePage[i].options[i].value) +
-//                 parseInt(selectEmotion[i].options[i].value);
-//     }
-
-//     totalValues.innerHTML = total + " / 10";
-// }
