@@ -200,6 +200,14 @@
       color: var(--txt-clr-white);
     border-radius: 5px;
 }
+
+.complete {
+    color: green;
+}
+
+.progress {
+    color: red;
+}
   
   /***********************************************************************/
   /* Footer Style */
