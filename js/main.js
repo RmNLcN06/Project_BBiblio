@@ -1,3 +1,22 @@
+/************** Partie Identification ****************/
+// Variables
+var password = document.getElementsByClassName("password")[0];
+var show = document.getElementsByClassName("show")[0];
+
+show.addEventListener("click", showPassword);
+
+function showPassword() {
+  if (password.type === "password") {
+    password.type = "text";
+  } else {
+    password.type = "password";
+  }
+}
+
+/******************************************************/
+
+/************** Partie Formulaire Juré ****************/
+
 // Variables
 var select = document.getElementsByTagName("select");
 var option = document.getElementsByTagName("option");
@@ -24,7 +43,6 @@ var totalValuesSecond = document.getElementsByClassName("total")[2];
 var totalValuesThird = document.getElementsByClassName("total")[3];
 var totalValuesForth = document.getElementsByClassName("total")[4];
 
-
 buttonSaveZero.addEventListener("click", changeStatutZero);
 buttonSaveFirst.addEventListener("click", changeStatutFirst);
 buttonSaveSecond.addEventListener("click", changeStatutSecond);
@@ -34,130 +52,188 @@ buttonSaveForth.addEventListener("click", changeStatutForth);
 // buttonSaveZero.addEventListener("click", saveValues);
 
 function saveValuesZero() {
-    var total;
-    var values = [select[0].value, select[1].value, select[2].value, select[3].value];
+  var total;
+  var values = [
+    select[0].value,
+    select[1].value,
+    select[2].value,
+    select[3].value,
+  ];
 
-    total = (parseInt(values[0]) + 
-            parseInt(values[1]) + 
-            parseInt(values[2]) + 
-            parseInt(values[3])) / values.length; 
+  total =
+    (parseInt(values[0]) +
+      parseInt(values[1]) +
+      parseInt(values[2]) +
+      parseInt(values[3])) /
+    values.length;
 
-    totalValuesZero.innerHTML = total + " / 10";
+  totalValuesZero.innerHTML = total + " / 10";
 }
 
 function saveValuesFirst() {
-    var total;
-    var values = [select[4].value, select[5].value, select[6].value, select[7].value];
+  var total;
+  var values = [
+    select[4].value,
+    select[5].value,
+    select[6].value,
+    select[7].value,
+  ];
 
-    total = (parseInt(values[0]) + 
-            parseInt(values[1]) + 
-            parseInt(values[2]) + 
-            parseInt(values[3])) / values.length; 
+  total =
+    (parseInt(values[0]) +
+      parseInt(values[1]) +
+      parseInt(values[2]) +
+      parseInt(values[3])) /
+    values.length;
 
-    totalValuesFirst.innerHTML = total + " / 10";
+  totalValuesFirst.innerHTML = total + " / 10";
 }
 
 function saveValuesSecond() {
-    var total;
-    var values = [select[8].value, select[9].value, select[10].value, select[11].value];
+  var total;
+  var values = [
+    select[8].value,
+    select[9].value,
+    select[10].value,
+    select[11].value,
+  ];
 
-    total = (parseInt(values[0]) + 
-            parseInt(values[1]) + 
-            parseInt(values[2]) + 
-            parseInt(values[3])) / values.length; 
+  total =
+    (parseInt(values[0]) +
+      parseInt(values[1]) +
+      parseInt(values[2]) +
+      parseInt(values[3])) /
+    values.length;
 
-    totalValuesSecond.innerHTML = total + " / 10";
+  totalValuesSecond.innerHTML = total + " / 10";
 }
 
 function saveValuesThird() {
-    var total;
-    var values = [select[12].value, select[13].value, select[14].value, select[15].value];
+  var total;
+  var values = [
+    select[12].value,
+    select[13].value,
+    select[14].value,
+    select[15].value,
+  ];
 
-    total = (parseInt(values[0]) + 
-            parseInt(values[1]) + 
-            parseInt(values[2]) + 
-            parseInt(values[3])) / values.length; 
+  total =
+    (parseInt(values[0]) +
+      parseInt(values[1]) +
+      parseInt(values[2]) +
+      parseInt(values[3])) /
+    values.length;
 
-    totalValuesThird.innerHTML = total + " / 10";
+  totalValuesThird.innerHTML = total + " / 10";
 }
 
 function saveValuesForth() {
-    var total;
-    var values = [select[16].value, select[17].value, select[18].value, select[19].value];
+  var total;
+  var values = [
+    select[16].value,
+    select[17].value,
+    select[18].value,
+    select[19].value,
+  ];
 
-    total = (parseInt(values[0]) + 
-            parseInt(values[1]) + 
-            parseInt(values[2]) + 
-            parseInt(values[3])) / values.length; 
+  total =
+    (parseInt(values[0]) +
+      parseInt(values[1]) +
+      parseInt(values[2]) +
+      parseInt(values[3])) /
+    values.length;
 
-    totalValuesForth.innerHTML = total + " / 10";
+  totalValuesForth.innerHTML = total + " / 10";
 }
 
 function changeStatutZero() {
-    if(select[0].options[0].selected == true || select[1].options[0].selected == true || select[2].options[0].selected == true || select[3].options[0].selected == true) {
-        statutZero.classList.remove("complete");
-        statutZero.classList.add("progress");
-        statutZero.innerHTML = "En Attente";
-    } else {
-        statutZero.classList.remove("progress");
-        statutZero.classList.add("complete");
-        statutZero.innerHTML = "Complet";
-        saveValuesZero();
-    }
-}  
+  if (
+    select[0].options[0].selected == true ||
+    select[1].options[0].selected == true ||
+    select[2].options[0].selected == true ||
+    select[3].options[0].selected == true
+  ) {
+    statutZero.classList.remove("complete");
+    statutZero.classList.add("progress");
+    statutZero.innerHTML = "En Attente";
+  } else {
+    statutZero.classList.remove("progress");
+    statutZero.classList.add("complete");
+    statutZero.innerHTML = "Complet";
+    saveValuesZero();
+  }
+}
 
 function changeStatutFirst() {
-    if(select[4].options[0].selected == true || select[5].options[0].selected == true || select[6].options[0].selected == true || select[7].options[0].selected == true) {
-        statutFirst.classList.remove("complete");
-        statutFirst.classList.add("progress");
-        statutFirst.innerHTML = "En Attente";
-    }
-    else {
-        statutFirst.classList.remove("progress");
-        statutFirst.classList.add("complete");
-        statutFirst.innerHTML = "Complet";
-        saveValuesFirst();
-    }
-}  
+  if (
+    select[4].options[0].selected == true ||
+    select[5].options[0].selected == true ||
+    select[6].options[0].selected == true ||
+    select[7].options[0].selected == true
+  ) {
+    statutFirst.classList.remove("complete");
+    statutFirst.classList.add("progress");
+    statutFirst.innerHTML = "En Attente";
+  } else {
+    statutFirst.classList.remove("progress");
+    statutFirst.classList.add("complete");
+    statutFirst.innerHTML = "Complet";
+    saveValuesFirst();
+  }
+}
 
 function changeStatutSecond() {
-    if(select[8].options[0].selected == true || select[9].options[0].selected == true || select[10].options[0].selected == true || select[11].options[0].selected == true) {
-        statutSecond.classList.remove("complete");
-        statutSecond.classList.add("progress");
-        statutSecond.innerHTML = "En Attente";
-    } else {
-        statutSecond.classList.remove("progress");
-        statutSecond.classList.add("complete");
-        statutSecond.innerHTML = "Complet";
-        saveValuesSecond();
-    }
-}  
+  if (
+    select[8].options[0].selected == true ||
+    select[9].options[0].selected == true ||
+    select[10].options[0].selected == true ||
+    select[11].options[0].selected == true
+  ) {
+    statutSecond.classList.remove("complete");
+    statutSecond.classList.add("progress");
+    statutSecond.innerHTML = "En Attente";
+  } else {
+    statutSecond.classList.remove("progress");
+    statutSecond.classList.add("complete");
+    statutSecond.innerHTML = "Complet";
+    saveValuesSecond();
+  }
+}
 
 function changeStatutThird() {
-    if(select[12].options[0].selected == true || select[13].options[0].selected == true || select[14].options[0].selected == true || select[15].options[0].selected == true) {
-        statutThird.classList.remove("complete");
-        statutThird.classList.add("progress");
-        statutThird.innerHTML = "En Attente";
-    } else {
-        statutThird.classList.remove("progress");
-        statutThird.classList.add("complete");
-        statutThird.innerHTML = "Complet";
-        saveValuesThird();
-    }
-}  
+  if (
+    select[12].options[0].selected == true ||
+    select[13].options[0].selected == true ||
+    select[14].options[0].selected == true ||
+    select[15].options[0].selected == true
+  ) {
+    statutThird.classList.remove("complete");
+    statutThird.classList.add("progress");
+    statutThird.innerHTML = "En Attente";
+  } else {
+    statutThird.classList.remove("progress");
+    statutThird.classList.add("complete");
+    statutThird.innerHTML = "Complet";
+    saveValuesThird();
+  }
+}
 
 function changeStatutForth() {
-    if(select[16].options[0].selected == true || select[17].options[0].selected == true || select[18].options[0].selected == true || select[19].options[0].selected == true) {
-        statutForth.classList.remove("complete");
-        statutForth.classList.add("progress");
-        statutForth.innerHTML = "En Attente";
-    } else {
-        statutForth.classList.remove("progress");
-        statutForth.classList.add("complete");
-        statutForth.innerHTML = "Complet";
-        saveValuesForth();
-    }
-}  
+  if (
+    select[16].options[0].selected == true ||
+    select[17].options[0].selected == true ||
+    select[18].options[0].selected == true ||
+    select[19].options[0].selected == true
+  ) {
+    statutForth.classList.remove("complete");
+    statutForth.classList.add("progress");
+    statutForth.innerHTML = "En Attente";
+  } else {
+    statutForth.classList.remove("progress");
+    statutForth.classList.add("complete");
+    statutForth.innerHTML = "Complet";
+    saveValuesForth();
+  }
+}
 
 /***************************************************************************/
-

@@ -166,8 +166,8 @@ h4 {
 }
 
 .wrapper legend {
-  text-align: center;
   padding: 0px 15px;
+  margin: 0px auto;
 }
 
 .wrapper input,
@@ -203,11 +203,11 @@ h4 {
 }
 
 .wrapper .size-field {
-  width: 120px;
+  width: 180px;
 }
 
 .wrapper .size-margin {
-  margin-left: 180px;
+  padding: 0px 453px;
 }
 
 .wrapper input[type="button"] {
@@ -316,6 +316,66 @@ article h3 {
 
 article p {
   text-align: justify;
+}
+
+/* Connexion Wrapper Style */
+.wrapper-connexion {
+  width: 75%;
+  border: 2px solid var(--page-clr-hdr);
+  margin: 25px auto;
+  padding: 50px;
+}
+
+.wrapper-connexion fieldset {
+  width: 90%;
+  border: 2px solid var(--page-clr-btn);
+  border-radius: 5px;
+  margin: auto;
+}
+
+.wrapper-connexion legend {
+  margin: 0px auto;
+  padding: 0px 20px;
+}
+
+.wrapper-connexion .login,
+.wrapper-connexion .pass,
+.wrapper-connexion .show-mdp,
+.wrapper-connexion .send {
+  width: 35%;
+  display: block;
+  margin: 35px auto;
+}
+
+.wrapper-connexion .show-mdp {
+  font-size: 14px;
+  padding: 0px 98px;
+}
+
+.wrapper-connexion .send {
+  padding: 0px 150px;
+}
+
+.wrapper-connexion label[for="login"] {
+  margin-right: 25px;
+}
+
+.wrapper-connexion input[type="button"] {
+  margin: 20px auto;
+  padding: 10px;
+  border: 2px solid maroon;
+  color: maroon;
+  opacity: 0.4;
+  transition: var(--time-anim);
+}
+
+.wrapper-connexion input[type="button"]:hover {
+  opacity: 1;
+  color: var(--txt-clr-white);
+  background-color: maroon;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
 }
 
 /***********************************************************************/
