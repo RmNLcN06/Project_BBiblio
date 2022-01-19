@@ -44,6 +44,7 @@
     <section>
         <h1>Tableau De Bord</h1>
         <h3>Bonjour, M. / Mme. X</h3>
+        <h4>Vous êtes Juré</h4>
 
         <aside>
             <ul>
@@ -85,13 +86,78 @@
                   <td>En cours</td>
                   <td>
                     <ul>
-                        <li>Style: / 10</li>
-                        <li>Illustrations: / 10</li>
-                        <li>Mise En Page: / 10</li>
-                        <li>Emotion: / 10</li>
+                        <li>
+                            Style:
+                            <select name="styles">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                             / 10
+                        </li>
+                        <li>
+                            Illustrations:
+                            <select name="illustrations">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                            / 10</li>
+                        <li>
+                            Mise En Page: 
+                            <select name="misepage">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                            / 10</li>
+                        <li>
+                            Emotion: 
+                            <select name="emotion">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                            / 10
+                        </li>
+                        <li>
+                            <input type="button" class="save" name="save" value="Sauver">
+                        </li>
                     </ul>  
                     </td>
-                  <td> / 10</td>
+                    <td class="total"></td>
                 </tr>
                 <tr>
                     <td><a href="">Les Folles Nuits de Paname</a></td>
@@ -111,14 +177,79 @@
                       </td>
                     <td>En cours</td>
                     <td>
-                      <ul>
-                          <li>Style: / 10</li>
-                          <li>Illustrations: / 10</li>
-                          <li>Mise En Page: / 10</li>
-                          <li>Emotion: / 10</li>
-                      </ul>  
+                        <ul>
+                            <li>
+                                Style:
+                                <select name="styles">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                                 / 10
+                            </li>
+                            <li>
+                                Illustrations:
+                                <select name="illustrations">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                                / 10</li>
+                            <li>
+                                Mise En Page: 
+                                <select name="misepage">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                                / 10</li>
+                            <li>
+                                Emotion: 
+                                <select name="emotion">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                                / 10
+                            </li>
+                            <li>
+                                <input type="button" class="save" name="save" value="Sauver">
+                            </li>
+                        </ul>
                       </td>
-                    <td> / 10</td>
+                      <td class="total"></td>
                   </tr>
                   <tr>
                     <td><a href="">Les Folles Nuits de Paname</a></td>
@@ -138,14 +269,79 @@
                       </td>
                     <td>En cours</td>
                     <td>
-                      <ul>
-                          <li>Style: / 10</li>
-                          <li>Illustrations: / 10</li>
-                          <li>Mise En Page: / 10</li>
-                          <li>Emotion: / 10</li>
-                      </ul>  
+                        <ul>
+                            <li>
+                                Style:
+                                <select name="styles">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                                 / 10
+                            </li>
+                            <li>
+                                Illustrations:
+                                <select name="illustrations">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                                / 10</li>
+                            <li>
+                                Mise En Page: 
+                                <select name="misepage">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                                / 10</li>
+                            <li>
+                                Emotion: 
+                                <select name="emotion">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                                / 10
+                            </li>
+                            <li>
+                                <input type="button" class="save" name="save" value="Sauver">
+                            </li>
+                        </ul>
                       </td>
-                    <td> / 10</td>
+                      <td class="total"></td>
                   </tr>
                   <tr>
                     <td><a href="">Les Folles Nuits de Paname</a></td>
@@ -165,14 +361,79 @@
                       </td>
                     <td>En cours</td>
                     <td>
-                      <ul>
-                          <li>Style: / 10</li>
-                          <li>Illustrations: / 10</li>
-                          <li>Mise En Page: / 10</li>
-                          <li>Emotion: / 10</li>
-                      </ul>  
+                        <ul>
+                            <li>
+                                Style:
+                                <select name="styles">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                                 / 10
+                            </li>
+                            <li>
+                                Illustrations:
+                                <select name="illustrations">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                                / 10</li>
+                            <li>
+                                Mise En Page: 
+                                <select name="misepage">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                                / 10</li>
+                            <li>
+                                Emotion: 
+                                <select name="emotion">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                                / 10
+                            </li>
+                            <li>
+                                <input type="button" class="save" name="save" value="Sauver">
+                            </li>
+                        </ul>
                       </td>
-                    <td> / 10</td>
+                      <td class="total"></td>
                   </tr>
                   <tr>
                     <td><a href="">Les Folles Nuits de Paname</a></td>
@@ -192,14 +453,79 @@
                       </td>
                     <td>En cours</td>
                     <td>
-                      <ul>
-                          <li>Style: / 10</li>
-                          <li>Illustrations: / 10</li>
-                          <li>Mise En Page: / 10</li>
-                          <li>Emotion: / 10</li>
-                      </ul>  
+                        <ul>
+                            <li>
+                                Style:
+                                <select name="styles">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                                 / 10
+                            </li>
+                            <li>
+                                Illustrations:
+                                <select name="illustrations">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                                / 10</li>
+                            <li>
+                                Mise En Page: 
+                                <select name="misepage">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                                / 10</li>
+                            <li>
+                                Emotion: 
+                                <select name="emotion">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                                / 10
+                            </li>
+                            <li>
+                                <input type="button" class="save" name="save" value="Sauver">
+                            </li>
+                        </ul> 
                       </td>
-                    <td> / 10</td>
+                    <td class="total"></td>
                   </tr>
               </table>
         </article>
@@ -247,6 +573,6 @@
 
     
     <!-- Main Files JavaScript -->
-    <script src="./js/main.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>
