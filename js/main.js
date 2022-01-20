@@ -1,12 +1,12 @@
 /************** Partie Identification ****************/
 // Variables
 var password = document.getElementsByClassName("password")[0];
-// var passwordConfirm = document.getElementsByClassName("password")[1];
+var passwordConfirm = document.getElementsByClassName("password")[1];
 var show = document.getElementsByClassName("show")[0];
-// var showConfirm = document.getElementsByClassName("show")[1];
+var showConfirm = document.getElementsByClassName("show")[1];
 
 show.addEventListener("click", showPassword);
-// showConfirm.addEventListener("click", showPasswordConfirm);
+showConfirm.addEventListener("click", showPasswordConfirm);
 
 function showPassword() {
   if (password.type === "password") {
@@ -16,13 +16,13 @@ function showPassword() {
   }
 }
 
-// function showPasswordConfirm() {
-//   if (passwordConfirm.type === "password") {
-//     passwordConfirm.type = "text";
-//   } else {
-//     passwordConfirm.type = "password";
-//   }
-// }
+function showPasswordConfirm() {
+  if (passwordConfirm.type === "password") {
+    passwordConfirm.type = "text";
+  } else {
+    passwordConfirm.type = "password";
+  }
+}
 
 // Sous-Partie Identification : RegEx
 /* 
@@ -34,7 +34,9 @@ function showPassword() {
 */
 var verifRegEx = /^.*(?=.{10,})(?=.*[a-zA-Z])(?=.*\d).*$/;
 
-var msgValidationError = document.getElementsByClassName("msg-validation-error")[0];
+var msgValidationError = document.getElementsByClassName(
+  "msg-validation-error"
+)[0];
 var verifPassword = document.getElementsByClassName("verify")[0];
 // var verifPasswordDashboard = document.getElementsByClassName("verify-dashboard")[0];
 var verifLogin = document.getElementsByClassName("log")[0];
@@ -44,19 +46,31 @@ verifPassword.addEventListener("click", passwordCheck);
 // verifPasswordDashboard.addEventListener("click", passwordCheckDashboard);
 
 function passwordCheck() {
-  if(verifLogin.value == loginKey[0] && verifRegEx.test(password.value) == true) {
+  if (
+    verifLogin.value == loginKey[0] &&
+    verifRegEx.test(password.value) == true
+  ) {
     // console.log("Ca fonctionne bien !");
     window.location.replace("./change_password.html");
-  } else if(verifLogin.value != loginKey[0] && verifRegEx.test(password.value) == true){
+  } else if (
+    verifLogin.value != loginKey[0] &&
+    verifRegEx.test(password.value) == true
+  ) {
     msgValidationError.classList.add("error");
-    msgValidationError.innerHTML = "Identifiant Invalide. Veuillez Recommencer.";
-  } else if(verifLogin.value == loginKey[0] && verifRegEx.test(password.value) != true) {
+    msgValidationError.innerHTML =
+      "Identifiant Invalide. Veuillez Recommencer.";
+  } else if (
+    verifLogin.value == loginKey[0] &&
+    verifRegEx.test(password.value) != true
+  ) {
     // console.log("Ca ne fonctionne pas !");
     msgValidationError.classList.add("error");
-    msgValidationError.innerHTML = "Mot De Passe Invalide. Veuillez Recommencer.";
+    msgValidationError.innerHTML =
+      "Mot De Passe Invalide. Veuillez Recommencer.";
   } else {
     msgValidationError.classList.add("error");
-    msgValidationError.innerHTML = "Identifiant et Mot De Passe Invalides. Veuillez Recommencer.";
+    msgValidationError.innerHTML =
+      "Identifiant et Mot De Passe Invalides. Veuillez Recommencer.";
   }
 }
 
@@ -96,18 +110,17 @@ function timerChangePage() {
 }
 
 function changePassword() {
-  if(passNew.value === passConfirm.value) {
+  if (passNew.value === passConfirm.value) {
     msgValidationError.classList.add("validation");
-    msgValidationError.innerHTML = "Votre nouveau mot de passe a bien été pris en compte. Vous allez être redirigé vers la page d'identification dans quelques secondes.";
+    msgValidationError.innerHTML =
+      "Votre nouveau mot de passe a bien été pris en compte. Vous allez être redirigé vers la page d'identification dans quelques secondes.";
     timerChangePage();
-
   } else {
     msgValidationError.classList.add("error");
-    msgValidationError.innerHTML = "Votre nouveau mot de passe et la confirmation de votre mot de passe sont différents. Veuillez réessayer.";
+    msgValidationError.innerHTML =
+      "Votre nouveau mot de passe et la confirmation de votre mot de passe sont différents. Veuillez réessayer.";
   }
 }
-
-
 
 /**************************************************************/
 

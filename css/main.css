@@ -121,6 +121,34 @@ ul.menu li a:hover {
 
 /*******************************************************************/
 /*Sections Style */
+ul.breadcrumb {
+  margin: 40px 0px 0px 25px;
+  padding: 10px 16px;
+  list-style: none;
+  background-color: var(--page-clr-bckgrd);
+}
+
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+
+ul.breadcrumb li + li:before {
+  padding: 8px;
+  color: var(--txt-clr-black);
+  content: "/\00a0";
+}
+
+ul.breadcrumb li a {
+  color: var(--page-clr-btn);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+ul.breadcrumb li a:hover {
+  color: var(--page-clr-hdr);
+}
+
 h1 {
   margin: 35px 0px 35px 0;
   text-align: center;
