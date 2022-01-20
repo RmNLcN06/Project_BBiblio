@@ -37,7 +37,7 @@ header {
 
 section {
   width: 90%;
-  height: 600px;
+  height: 700px; /*600px */
   margin: 0 auto;
 }
 
@@ -360,6 +360,10 @@ article p {
   margin-right: 25px;
 }
 
+.wrapper-connexion label[for="password"] {
+  font-size: 15px;
+}
+
 .wrapper-connexion input[type="button"] {
   margin: 20px auto;
   padding: 10px;
@@ -381,6 +385,12 @@ article p {
 .error {
   text-align: center;
   color: red;
+}
+
+.validation {
+  text-align: center;
+  color: green;
+  margin: 0px 200px;
 }
 
 /***********************************************************************/
