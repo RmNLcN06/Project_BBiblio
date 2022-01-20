@@ -13,6 +13,40 @@ function showPassword() {
   }
 }
 
+// Partie RegEx Identification
+/* 
+  ^.*              : Début du regex
+  (?=.{10,})       : Vérifie si 10 caractères minimums au Mot de Passe
+  (?=.*[a-zA-Z])   : Vérifie si contient une majuscule et une minuscule
+  (?=.*\d)         : Vérifie si contient au moins un chiffre
+  .*$              : Fin du regex
+*/
+var verifRegEx = /^.*(?=.{10,})(?=.*[a-zA-Z])(?=.*\d).*$/;
+
+var msgError = document.getElementsByClassName("msg-error")[0];
+var verifPassword = document.getElementsByClassName("verify")[0];
+var verifLogin = document.getElementsByClassName("log")[0];
+var loginKey = ["MonsieurX12345"];
+
+verifPassword.addEventListener("click", passwordCheck);
+
+function passwordCheck() {
+  if(verifLogin.value == loginKey[0] && verifRegEx.test(password.value) == true) {
+    // console.log("Ca fonctionne bien !");
+    window.location.replace("../test/dashboard_jure.html");
+  } else if(verifLogin.value != loginKey[0] && verifRegEx.test(password.value) == true){
+    msgError.classList.add("error");
+    msgError.innerHTML = "Identifiant Invalide. Veuillez Recommencer.";
+  } else if(verifLogin.value == loginKey[0] && verifRegEx.test(password.value) != true) {
+    // console.log("Ca ne fonctionne pas !");
+    msgError.classList.add("error");
+    msgError.innerHTML = "Mot De Passe Invalide. Veuillez Recommencer.";
+  } else {
+    msgError.classList.add("error");
+    msgError.innerHTML = "Identifiant et Mot De Passe Invalides. Veuillez Recommencer.";
+  }
+}
+
 /******************************************************/
 
 /************** Partie Formulaire Juré ****************/

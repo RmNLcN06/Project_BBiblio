@@ -378,6 +378,11 @@ article p {
   cursor: pointer;
 }
 
+.error {
+  text-align: center;
+  color: red;
+}
+
 /***********************************************************************/
 /* Footer Style */
 footer ul {
