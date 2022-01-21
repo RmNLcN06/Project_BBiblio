@@ -1,17 +1,18 @@
 /************** Partie Identification ****************/
-// Variables
+
+/********************* Variables ******************* */
+var verifLogin = document.getElementsByClassName("log")[0];
 var password = document.getElementsByClassName("password")[0];
 var show = document.getElementsByClassName("show")[0];
+var msgValidationError = document.getElementsByClassName(
+  "msg-validation-error"
+)[0];
+var verifPassword = document.getElementsByClassName("verify")[0];
+var intervalTimer;
 
-show.addEventListener("click", showPassword);
-
-function showPassword() {
-  if (password.type === "password") {
-    password.type = "text";
-  } else {
-    password.type = "password";
-  }
-}
+// Login + MdP Utilisateur
+var loginKey = ["MonsieurX12345"];
+// var mdpKey = ["Iletaitunefoisen88"];
 
 // Sous-Partie Identification : RegEx
 /* 
@@ -23,22 +24,38 @@ function showPassword() {
 */
 var verifRegEx = /^.*(?=.{10,})(?=.*[a-zA-Z])(?=.*\d).*$/;
 
-var msgValidationError = document.getElementsByClassName(
-  "msg-validation-error"
-)[0];
-var verifPassword = document.getElementsByClassName("verify")[0];
-var verifLogin = document.getElementsByClassName("log")[0];
-var loginKey = ["MonsieurX12345"];
+/**************************************************** */
+
+/************ AddEventListener + Fonctions *********** */
+show.addEventListener("click", showPassword);
+
+function showPassword() {
+  if (password.type === "password") {
+    password.type = "text";
+  } else {
+    password.type = "password";
+  }
+}
 
 verifPassword.addEventListener("click", passwordCheck);
+
+function timerChangePage() {
+  intervalTimer = setTimeout(pageConnection, 5000);
+
+  function pageConnection() {
+    window.location.replace("./profil.html");
+  }
+}
 
 function passwordCheck() {
   if (
     verifLogin.value == loginKey[0] &&
     verifRegEx.test(password.value) == true
   ) {
-    // console.log("Ca fonctionne bien !");
-    window.location.replace("../test/dashboard_jure.html");
+    msgValidationError.classList.add("validation");
+    msgValidationError.innerHTML =
+      "Connection Réussie. Veuillez Compléter Votre Profil ...";
+    timerChangePage();
   } else if (
     verifLogin.value != loginKey[0] &&
     verifRegEx.test(password.value) == true
@@ -60,3 +77,4 @@ function passwordCheck() {
       "Identifiant et Mot De Passe Invalides. Veuillez Recommencer.";
   }
 }
+/**************************************************** */

@@ -410,6 +410,26 @@ article p {
   cursor: pointer;
 }
 
+/* Profil Wrapper Style */
+.wrapper-profil {
+  width: 75%;
+  border: 2px solid var(--page-clr-hdr);
+  margin: 25px auto;
+  padding: 50px;
+}
+
+.wrapper-profil fieldset {
+  width: 90%;
+  border: 2px solid var(--page-clr-btn);
+  border-radius: 5px;
+  margin: auto;
+}
+
+.wrapper-profil legend {
+  margin: 0px auto;
+  padding: 0px 20px;
+}
+
 .error {
   text-align: center;
   color: red;
