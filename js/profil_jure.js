@@ -1,4 +1,4 @@
-/************** Partie Formulaire Profil ****************/
+/************** Partie Formulaire Profil Juré ****************/
 
 /********************* Variables ******************* */
 var msgValidationError = document.getElementsByClassName(
@@ -17,7 +17,7 @@ function timerChangePage() {
   intervalTimer = setTimeout(pageConnection, 3000);
 
   function pageConnection() {
-    window.location.replace("../test/dashboard_jure.html");
+    window.location.replace("../dashboards/dashboard_jure.html");
   }
 }
 /**************************************************** */

@@ -528,6 +528,16 @@ article p {
   cursor: pointer;
 }
 
+/* Inscrire Oeuvre Style*/
+label.myfile {
+  margin: 210px 338px;
+}
+
+input[type="file"] {
+  display: block;
+  margin: 20px auto;
+}
+
 /***********************************************************************/
 
 /* Validation / Error Message Style (Work with Javascript) */

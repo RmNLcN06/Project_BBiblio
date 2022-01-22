@@ -37,13 +37,13 @@ header {
 
 section {
   width: 90%;
-  height: 1200px;
+  /* height: 1200px; */
   margin: 0 auto;
 }
 
 article {
   width: 90%;
-  height: 900px;
+  /* height: 900px; */
   margin: 0 auto;
 }
 
@@ -121,7 +121,7 @@ ul.menu li a:hover {
 }
 
 /*******************************************************************/
-/* Dashboard Style */
+/* Dashboard Jure Style */
 ul.breadcrumb {
   margin: 40px 0px 0px 25px;
   padding: 10px 16px;
@@ -185,6 +185,7 @@ aside li {
 }
 
 article {
+  width: 85%;
   float: right;
 }
 
@@ -201,6 +202,7 @@ aside i {
 table {
   width: 100%;
   background-color: var(--txt-clr-white);
+  margin-bottom: 100px;
 }
 
 table,
@@ -245,6 +247,12 @@ table input[type="button"]:hover {
   border-radius: 5px;
 }
 
+/***********************************************************************/
+/* Dashboard Auteur Style */
+
+/***********************************************************************/
+/* Message Complétion Evaluation (Work with JavaScript) */
+
 .complete {
   color: green;
 }
@@ -255,6 +263,10 @@ table input[type="button"]:hover {
 
 /***********************************************************************/
 /* Footer Style */
+footer {
+  clear: both;
+}
+
 footer ul {
   float: left;
   margin: 50px 210px;

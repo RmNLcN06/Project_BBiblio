@@ -43,7 +43,7 @@ function timerChangePage() {
   intervalTimer = setTimeout(pageConnection, 3000);
 
   function pageConnection() {
-    window.location.replace("./profil.html");
+    window.location.replace("./profil_jure.html");
   }
 }
 
