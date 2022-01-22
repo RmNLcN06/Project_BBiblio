@@ -49,41 +49,46 @@
             <form action="#" target="#">
                 <fieldset>
                     <legend>Vos Informations</legend>
-                    <div class="first-line">
+                    <fieldset class="first-line">
+                        <legend>Informations Personnelles</legend>
                         <label for="lastname">Nom* : </label>
                         <input class="lastname" type="text" name="lastname" required>
-                        <label for="firstname">Prénom : </label>
+                        <label for="firstname">Prénom* : </label>
                         <input class="firstname" type="text" name="firstname" required>
-                    </div>
-                    <div class="second-line">
-                        <label for="lastname">Date de Naissance : </label>
-                        <input class="lastname" type="text" name="lastname" required>
-                        <label for="firstname">Sexe : </label>
-                        <input class="firstname" type="text" name="firstname" required>
-                    </div>
-                    <div class="third-line">
-                        <label for="address">Adresse : </label>
-                        <input class="address" type="password" name="address" required>
-                        <label for="address_alt">Complément d'Adresse : </label>
-                        <input class="address_alt" type="password" name="address_alt" required>
-                    </div>
-                    <div class="forth-line">
-                        <label for="address">Code Postal : </label>
-                        <input class="address" type="password" name="address" required>
-                        <label for="address_alt">Ville: </label>
-                        <input class="address_alt" type="password" name="address_alt" required>
-                        <label for="address_alt">Pays: </label>
-                        <input class="address_alt" type="password" name="address_alt" required>
-                    </div>
-                    <div class="fifth-line">
-                        <label for="show-mdp">N° Téléphone : </label> 
-                        <input class="show" type="checkbox">
-                        <label for="show-mdp">Email : </label> 
-                        <input class="show" type="checkbox">
-                    </div>
+                        <label for="birthday">Date de Naissance : </label>
+                        <input class="birthday" type="date" name="birthday">
+                        <label for="sex">Sexe : </label>
+                        <input type="radio" name="sex" value="man">
+                        <label for="man">Homme</label>
+                        <input type="radio" name="sex" value="woman">
+                        <label for="woman">Femme</label>
+                        <input type="radio" name="sex" value="other">
+                        <label for="other">Autre</label>
+                    </fieldset>
+                    <fieldset class="second-line">
+                        <legend>Lieu De Résidence</legend>
+                        <label for="address">Adresse* : </label>
+                        <input class="address" type="text" name="address" required>
+                        <label for="address-alt">Complément d'Adresse : </label>
+                        <input class="address-alt" type="text" name="address-alt">
+                        <label for="postal">Code Postal : </label>
+                        <input class="postal" type="number" name="postal">
+                        <label for="city">Ville* : </label>
+                        <input class="city" type="text" name="city" required>
+                        <label for="country">Pays* : </label>
+                        <input class="country" type="text" name="country" required>
+                    </fieldset>
+                    <fieldset class="third-line">
+                        <legend>Informations Complémentaires</legend>
+                        <label for="phone">N° Téléphone: </label>
+                        <input class="phone" type="tel" name="phone">
+                        <label for="mail">Email* : </label>
+                        <input class="mail" type="email" name="mail" required>
+                    </fieldset>
+                    <p>* : Champ Obligatoire</p>
                     <div class="msg-validation-error"></div>
-                    <div class="send">
-                        <input class="verify" type="button" name="Envoyer" value="Envoyer">
+                    <div class="send-information">
+                        <input class="verify" type="button" name="Sauvegarder" value="Sauvegarder">
                     </div>
                 </fieldset>
             </form>
@@ -130,6 +135,6 @@
 
     
     <!-- Main Files JavaScript -->
-    <script src="../js/identification.js"></script>
+    <script src="../js/profil.js"></script>
 </body>
 </html>

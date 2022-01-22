@@ -24,7 +24,7 @@ var verifRegEx = /^.*(?=.{10,})(?=.*[a-zA-Z])(?=.*\d).*$/;
 verifPassword.addEventListener("click", passwordCheck);
 
 function timerChangePage() {
-  intervalTimer = setTimeout(pageConnection, 5000);
+  intervalTimer = setTimeout(pageConnection, 3000);
 
   function pageConnection() {
     window.location.replace("./connexion_new.html");

@@ -37,7 +37,7 @@ header {
 
 section {
   width: 90%;
-  height: 700px; /*600px */
+  /* height: 700px; 600px */
   margin: 0 auto;
 }
 
@@ -415,14 +415,22 @@ article p {
   width: 75%;
   border: 2px solid var(--page-clr-hdr);
   margin: 25px auto;
-  padding: 50px;
+  padding: 20px;
 }
 
 .wrapper-profil fieldset {
   width: 90%;
-  border: 2px solid var(--page-clr-btn);
+  border: transparent;
   border-radius: 5px;
   margin: auto;
+}
+
+.wrapper-profil fieldset[class="first-line"],
+.wrapper-profil fieldset[class="second-line"],
+.wrapper-profil fieldset[class="third-line"] {
+  margin: 40px auto;
+  padding: 20px 0px;
+  border: 2px solid var(--page-clr-btn);
 }
 
 .wrapper-profil legend {
@@ -430,6 +438,89 @@ article p {
   padding: 0px 20px;
 }
 
+.msg-validation-error,
+.send-information {
+  width: 90%;
+  margin: 30px auto;
+}
+
+.wrapper-profil label,
+.wrapper-profil input {
+  margin: 10px 5px 10px 0px;
+}
+
+.wrapper-profil label[for="lastname"],
+.wrapper-profil label[for="birthday"],
+.wrapper-profil label[for="postal"],
+.wrapper-profil label[for="phone"] {
+  margin-left: 210px;
+}
+
+.wrapper-profil label[for="firstname"],
+.wrapper-profil label[for="sex"],
+.wrapper-profil label[for="mail"] {
+  margin-left: 50px;
+}
+
+.wrapper-profil input:not([type="radio" + type="button"]) {
+  width: 150px;
+  margin-right: 50px;
+}
+
+.wrapper-profil input[class="postal"],
+.wrapper-profil input[class="city"],
+.wrapper-profil input[class="country"] {
+  width: 100px;
+}
+
+.wrapper-profil label[for="address"],
+.wrapper-profil label[for="address-alt"] {
+  float: left;
+  margin-left: 325px;
+}
+
+.wrapper-profil input[class="address"],
+.wrapper-profil input[class="address-alt"] {
+  width: 350px;
+  height: 100px;
+  clear: both;
+  display: block;
+  margin-left: 325px;
+}
+
+.wrapper-profil input[class="phone"],
+.wrapper-profil input[class="mail"] {
+  width: 200px;
+}
+
+.wrapper-profil p {
+  text-align: center;
+  font-size: 12px;
+}
+
+.wrapper-profil input[type="button"] {
+  display: block;
+  width: 100px;
+  margin: 20px auto;
+  padding: 10px;
+  border: 2px solid maroon;
+  color: maroon;
+  opacity: 0.4;
+  transition: var(--time-anim);
+}
+
+.wrapper-profil input[type="button"]:hover {
+  opacity: 1;
+  color: var(--txt-clr-white);
+  background-color: maroon;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+/***********************************************************************/
+
+/* Validation / Error Message Style (Work with Javascript) */
 .error {
   text-align: center;
   color: red;
@@ -438,7 +529,7 @@ article p {
 .validation {
   text-align: center;
   color: green;
-  margin: 0px 200px;
+  /* margin: 0px 200px; */
 }
 
 /***********************************************************************/

@@ -40,7 +40,7 @@ function showPassword() {
 verifPassword.addEventListener("click", passwordCheck);
 
 function timerChangePage() {
-  intervalTimer = setTimeout(pageConnection, 5000);
+  intervalTimer = setTimeout(pageConnection, 3000);
 
   function pageConnection() {
     window.location.replace("./profil.html");
@@ -67,7 +67,6 @@ function passwordCheck() {
     verifLogin.value == loginKey[0] &&
     verifRegEx.test(password.value) != true
   ) {
-    // console.log("Ca ne fonctionne pas !");
     msgValidationError.classList.add("error");
     msgValidationError.innerHTML =
       "Mot De Passe Invalide. Veuillez Recommencer.";
