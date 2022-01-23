@@ -1,5 +1,4 @@
 /************** Partie Formulaire Juré ****************/
-
 // Variables
 var input = document.getElementsByClassName("inputcategory")[0];
 

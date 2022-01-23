@@ -189,6 +189,10 @@ article {
   float: right;
 }
 
+article h3 {
+  text-align: center;
+}
+
 aside li,
 article li {
   list-style-type: none;
@@ -255,6 +259,11 @@ table input[type="button"]:hover {
   padding: 12px 20px 12px 40px;
   border: 1px solid #ddd;
   margin-bottom: 12px;
+}
+
+article.balance h3 {
+  text-align: center;
+  margin-bottom: 25px;
 }
 
 article.balance {

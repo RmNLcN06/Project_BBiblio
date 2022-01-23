@@ -210,7 +210,7 @@ h4 {
 }
 
 .wrapper p,
-.wrapper label {
+.wrapper span {
   font-size: 12px;
   text-align: center;
 }
@@ -229,7 +229,7 @@ h4 {
   margin-left: 250px;
 }
 
-.wrapper label {
+.wrapper span {
   display: inline;
 }
 
@@ -411,11 +411,11 @@ article a.buy:hover {
   padding: 0px 150px;
 }
 
-.wrapper-connexion label[for="login"] {
+.wrapper-connexion span.log-in {
   margin-right: 25px;
 }
 
-.wrapper-connexion label[for="password"] {
+.wrapper-connexion span.criteria {
   font-size: 15px;
 }
 
@@ -471,21 +471,21 @@ article a.buy:hover {
   margin: 30px auto;
 }
 
-.wrapper-profil label,
+.wrapper-profil span,
 .wrapper-profil input {
   margin: 10px 5px 10px 0px;
 }
 
-.wrapper-profil label[for="lastname"],
-.wrapper-profil label[for="birthday"],
-.wrapper-profil label[for="postal"],
-.wrapper-profil label[for="phone"] {
+.wrapper-profil span.lastname,
+.wrapper-profil span.birthday,
+.wrapper-profil span.postal,
+.wrapper-profil span.phone {
   margin-left: 210px;
 }
 
-.wrapper-profil label[for="firstname"],
-.wrapper-profil label[for="sex"],
-.wrapper-profil label[for="mail"] {
+.wrapper-profil span.firstname,
+.wrapper-profil span.sex,
+.wrapper-profil span.mail {
   margin-left: 50px;
 }
 
@@ -500,8 +500,8 @@ article a.buy:hover {
   width: 100px;
 }
 
-.wrapper-profil label[for="address"],
-.wrapper-profil label[for="address-alt"] {
+.wrapper-profil span.address,
+.wrapper-profil span.address-alt {
   float: left;
   margin-left: 325px;
 }
@@ -546,25 +546,25 @@ article a.buy:hover {
 }
 
 /* Inscrire Oeuvre Style*/
-label.bookname,
-label.pagenumber,
-label.bookcode {
+span.bookname,
+span.pagenumber,
+span.bookcode {
   margin-left: 160px;
 }
 
-label.releasedate {
+span.releasedate {
   margin-left: 12px;
 }
 
-label.editor {
+span.editor {
   margin-left: 25px;
 }
 
-label.origincountry {
+span.origincountry {
   margin-left: 70px;
 }
 
-label[for="category"] {
+span.category {
   margin: 0px 380px;
 }
 
@@ -572,14 +572,14 @@ input[value="french"] {
   margin-left: 40px;
 }
 
-label[for="french"],
-label[for="foreign"],
-label[for="document"],
-label[for="biography"] {
+span.french,
+span.foreign,
+span.document,
+span.biography {
   margin-right: 25px;
 }
 
-label.myfile {
+span.myfile {
   margin: 210px 338px;
 }
 
