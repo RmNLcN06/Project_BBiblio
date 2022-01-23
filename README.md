@@ -15,11 +15,13 @@ Projet de site de type concours littéraire / Literary Contest Website Project
 
 Ce projet de site de concours littéraire entre dans le cadre d'une évaluation au sein de la formation AFPA. Ce projet a été réalisé en l'espace d'une semaine.
 Ce site ne fonctionne pour le moment que sur des écrans de résolution classique de Desktop et Laptop (1920 x 1080). De plus, du fait que ce site n'applique pas pour le moment le Responsive, tous les tests ont été réalisés avec une console se situant en bas de l'écran (problèmes rencontrés lors du basculement de la console sur les cotés de l'écran).
+
 Ce site a été testé sur tous les navigateurs suivants : 
 * Google Chrome
 * Mozilla Firefox
 * Microsoft Edge
-* Opéra
+* Opéra  
+
 Il faut souligner également que pour le moment, la partie non négligeable du Back-End du projet reste en suspens. Aucune donnée saisie par l'utilisateur n'est donc enregistrée ou stockée en BDD (Base De Donnée). Toutes les pages HTML de ce site sont passées par le Validateur du W3C et ont été certifiées. De plus, comme demandé dans l'énoncé de cette évaluation, un espace GitHub de dépôt a été créé pour donner plus de visibilité au projet.
 
 ### Technologies Utilisées
