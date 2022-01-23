@@ -11,8 +11,8 @@ var verifPassword = document.getElementsByClassName("verify")[0];
 var intervalTimer;
 
 // Login + MdP Utilisateur
-var loginKey = ["MonsieurX12345"];
-// var mdpKey = ["Iletaitunefoisen88"];
+var loginKeyJudge = ["MonsieurJudge06"];
+var loginKeyAuthor = ["MonsieurAuthor06"];
 
 // Sous-Partie Identification : RegEx
 /* 
@@ -39,7 +39,7 @@ function showPassword() {
 
 verifPassword.addEventListener("click", passwordCheck);
 
-function timerChangePage() {
+function timerChangePageJudge() {
   intervalTimer = setTimeout(pageConnection, 3000);
 
   function pageConnection() {
@@ -47,24 +47,44 @@ function timerChangePage() {
   }
 }
 
+verifPassword.addEventListener("click", passwordCheck);
+
+function timerChangePageAuthor() {
+  intervalTimer = setTimeout(pageConnection, 3000);
+
+  function pageConnection() {
+    window.location.replace("./profil_auteur.html");
+  }
+}
+
 function passwordCheck() {
   if (
-    verifLogin.value == loginKey[0] &&
+    verifLogin.value == loginKeyJudge[0] &&
     verifRegEx.test(password.value) == true
   ) {
     msgValidationError.classList.add("validation");
     msgValidationError.innerHTML =
-      "Connection Réussie. Veuillez Compléter Votre Profil ...";
-    timerChangePage();
+      "Connection Juré Réussie. Veuillez Compléter Votre Profil ...";
+    timerChangePageJudge();
   } else if (
-    verifLogin.value != loginKey[0] &&
+    verifLogin.value == loginKeyAuthor[0] &&
+    verifRegEx.test(password.value) == true
+  ) {
+    msgValidationError.classList.add("validation");
+    msgValidationError.innerHTML =
+      "Connection Auteur Réussie. Veuillez Compléter Votre Profil ...";
+    timerChangePageAuthor();
+  } else if (
+    (verifLogin.value != loginKeyJudge[0] ||
+      verifLogin.value != loginKeyAuthor[0]) &&
     verifRegEx.test(password.value) == true
   ) {
     msgValidationError.classList.add("error");
     msgValidationError.innerHTML =
       "Identifiant Invalide. Veuillez Recommencer.";
   } else if (
-    verifLogin.value == loginKey[0] &&
+    (verifLogin.value == loginKeyJudge[0] ||
+      verifLogin.value == loginKeyAuthor[0]) &&
     verifRegEx.test(password.value) != true
   ) {
     msgValidationError.classList.add("error");
