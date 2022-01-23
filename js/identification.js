@@ -89,7 +89,7 @@ function passwordCheck() {
   ) {
     msgValidationError.classList.add("error");
     msgValidationError.innerHTML =
-      "Mot De Passe Invalide. Veuillez Recommencer.";
+      "Mot De Passe Invalide. Il Doit Comporter : une majuscule, une minuscule, au moins un chiffre, au minimum dix caractères.";
   } else {
     msgValidationError.classList.add("error");
     msgValidationError.innerHTML =

@@ -44,7 +44,7 @@ function passwordCheck() {
   } else {
     msgValidationError.classList.add("error");
     msgValidationError.innerHTML =
-      "Format Mot De Passe Et/Ou Confirmation Mot De Passe Invalide. Veuillez réessayer.";
+      "Format Mot De Passe Et/Ou Confirmation Mot De Passe Invalide. Le Mot De Passe Doit Comporter : une majuscule, une minuscule, au moins un chiffre, au minimum dix caractères.";
   }
 }
 /*******************************************************************/
