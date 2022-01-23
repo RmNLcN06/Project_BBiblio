@@ -21,12 +21,12 @@ Il faut souligner également que pour le moment, la partie non négligeable du B
 
 ---
 
-*HTML5
-*CSS3
-*JavaScript
-*Visual Studio Code
-*GitHub + GitBash
-*Techniques de Maquettage (Arborescence du site + Zoning + Wireframes)
+- HTML5
+- CSS3
+- JavaScript
+- Visual Studio Code
+- GitHub + GitBash
+- Techniques de Maquettage (Arborescence du site + Zoning + Wireframes)
 
 ### Explications et Choix Fonctionnement Du Site
 
