@@ -1,13 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <!-- Balises META -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" lang="fr" content="Romain Luciano" />
+    <meta name="description" content="Bienvenue Sur BBiblio ! Site Du Concours Littéraire Français !" />
+    <meta name="keywords" lang="fr" content="BBiblio, livres, oeuvres littéraires, fiche descriptive, auteurs, concours, nouvelles, actualités, historique, prix littéraire" />
+    <meta name="reply-to" content="https://github.com/RmNLcN06" />
+    <meta name="copyright" content="COPYRIGHT Romain Luciano - Tous Droits Réservés" />
+    <meta name="generator" lang="fr" content="Visual Studio Code, HTML5, CSS3, JavaScript" />
+    <meta name="content-type" content ="text/html ;charset=ISO-8859-1" />
+    <meta name="robots" content ="index, nofollow" />
+    <!-- Fin Balises META -->
+
     <title>Tableau De Bord - Auteur | Prix BBiblio</title>
 
     <!-- Main Stylesheet CSS -->
     <link rel="stylesheet" href="../css/dashboard.css">
+
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" href="../images/favicon/favicon.ico" type="image/x-icon">
 
     <!-- Google Fonts Link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,10 +36,10 @@
 <body>
     <!-- Start Header -->
     <header>
-        <a href="./accueil.html">
+        <a href="../accueil.html">
             BBiblio
         </a>
-        <a href="./pages/connexion.html">
+        <a href="../pages/connexion.html">
             <i class="far fa-user-circle"> Se Connecter </i>
         </a>
     </header>
@@ -32,20 +47,19 @@
 
     <!-- Start Navigation -->
     <ul class="menu">
-        <li><a href="./pages/concours.html">Concours</a></li>
-        <li><a href="./pages/actualites.html">Actualités</a></li>
-        <li><a href="./pages/historique_prix.html">Historique du Prix</a></li>
-        <li><a href="./pages/reglement.html">Règlement du concours</a></li>
-        <li><a href="./pages/contact.html">Contact</a></li>
-        <li><a href="./dashboards/dashboard_jure.html">Espace Juré</a></li>
-        <li><a class="active" href="./dashboards/dashboard_auteur.html">Espace Auteur</a></li>
+        <li><a href="../pages/concours.html">Concours</a></li>
+        <li><a href="../pages/actualites.html">Actualités</a></li>
+        <li><a href="../pages/historique_prix.html">Historique du Prix</a></li>
+        <li><a href="../pages/reglement.html">Règlement du concours</a></li>
+        <li><a href="../pages/contact.html">Contact</a></li>
+        <li><a href="./dashboard_jure.html">Espace Juré</a></li>
+        <li><a class="active" href="./dashboard_auteur.html">Espace Auteur</a></li>
     </ul>
     <!-- End Navigation -->
 
     <section>
         <ul class="breadcrumb">
             <li><a href="../accueil.html">Accueil</a></li>
-            <li><a href="../pages/connexion.html">Se Connecter</a></li>
             <li>Espace Auteur</li>
         </ul>
         <h1>Tableau De Bord</h1>
@@ -56,12 +70,12 @@
             <ul>
                 <li>
                     <i class="fas fa-caret-right"></i>
-                    <a href="../pages/profil.html">Mon Profil</a>
+                    <a href="../pages/profil_auteur.html">Mon Profil</a>
                 </li>
-                <li>
+                <!-- <li>
                     <i class="fas fa-caret-right"></i>
                     <a href="#">Mes Messages</a>
-                </li>
+                </li> -->
                 <li>
                     <i class="fas fa-caret-right"></i>
                     <a href="../pages/inscrire_oeuvre.html">Inscrire Une Oeuvre</a>
@@ -83,127 +97,145 @@
                     <th>Catégorie(s)</th>
                 </tr>
                 <tr>
-                  <td><a href="">Les Folles Nuits de Paname</a></td>
-                  <td>Mickael Rougé</td>
+                  <td><a href="../pages/article_historique.html">Titre Livre 1</a></td>
+                  <td>Auteur 1</td>
                   <td>France</td>
                   <td>2021</td>
                     <td>
                         <ul>
                             <li>Meilleur Roman Français</li>
-                            <li>Meilleur Roman Etranger</li>
-                            <li>Meilleur Documentaire</li>
-                            <li>Meilleure Biographie</li>
                         </ul>
                     </td>
                 </tr>
                 <tr>
-                    <td><a href="">Les Folles Nuits de Paname</a></td>
-                    <td>Mickael Rougé</td>
+                    <td><a href="../pages/article_historique.html">Titre Livre 2</a></td>
+                    <td>Auteur 2</td>
                     <td>France</td>
                     <td>2021</td>
                       <td>
                           <ul>
                               <li>Meilleur Roman Français</li>
+                          </ul>
+                      </td>
+                  </tr>
+                  <tr>
+                    <td><a href="../pages/article_historique.html">Titre Livre 3</a></td>
+                    <td>Auteur 3</td>
+                    <td>France</td>
+                    <td>2021</td>
+                      <td>
+                          <ul>
+                              <li>Meilleur Roman Français</li>
+                          </ul>
+                      </td>
+                    </tr>
+                  <tr>
+                    <td><a href="../pages/article_historique.html">Titre Livre 4</a></td>
+                    <td>Auteur 4</td>
+                    <td>Italie</td>
+                    <td>2021</td>
+                      <td>
+                          <ul>
                               <li>Meilleur Roman Etranger</li>
+                          </ul>
+                      </td>
+                  </tr>
+                  <tr>
+                    <td><a href="../pages/article_historique.html">Titre Livre 5</a></td>
+                    <td>Auteur 5</td>
+                    <td>Japon</td>
+                    <td>2021</td>
+                      <td>
+                          <ul>
+                              <li>Meilleur Roman Etranger</li>
+                          </ul>
+                      </td>
+                  </tr>
+                  <tr>
+                    <td><a href="../pages/article_historique.html">Titre Livre 6</a></td>
+                    <td>Auteur 6</td>
+                    <td>Mozambique</td>
+                    <td>2021</td>
+                      <td>
+                          <ul>
+                              <li>Meilleur Roman Etranger</li>
+                          </ul>
+                      </td>
+                  </tr>
+                  <tr>
+                    <td><a href="../pages/article_historique.html">Titre Livre 7</a></td>
+                    <td>Auteur 7</td>
+                    <td>Etats-Unis</td>
+                    <td>2021</td>
+                      <td>
+                          <ul>
                               <li>Meilleur Documentaire</li>
+                          </ul>
+                      </td>
+                  </tr>
+                  <tr>
+                    <td><a href="../pages/article_historique.html">Titre Livre 8</a></td>
+                    <td>Auteur 8</td>
+                    <td>Algérie</td>
+                    <td>2021</td>
+                      <td>
+                          <ul>
+                              <li>Meilleur Documentaire</li>
+                          </ul>
+                      </td>
+                  </tr>
+                  <tr>
+                    <td><a href="../pages/article_historique.html">Titre Livre 9</a></td>
+                    <td>Auteur 9</td>
+                    <td>Australie</td>
+                    <td>2021</td>
+                      <td>
+                          <ul>
+                              <li>Meilleur Documentaire</li>
+                          </ul>
+                      </td>
+                  </tr>
+                  <tr>
+                    <td><a href="../pages/article_historique.html">Titre Livre 10</a></td>
+                    <td>Auteur 10</td>
+                    <td>Allemagne</td>
+                    <td>2021</td>
+                      <td>
+                          <ul>
                               <li>Meilleure Biographie</li>
                           </ul>
                       </td>
                   </tr>
                   <tr>
-                    <td><a href="">Les Folles Nuits de Paname</a></td>
-                    <td>Mickael Rougé</td>
-                    <td>France</td>
+                    <td><a href="../pages/article_historique.html">Titre Livre 11</a></td>
+                    <td>Auteur 11</td>
+                    <td>Portugal</td>
                     <td>2021</td>
                       <td>
                           <ul>
-                              <li>Meilleur Roman Français</li>
-                              <li>Meilleur Roman Etranger</li>
-                              <li>Meilleur Documentaire</li>
                               <li>Meilleure Biographie</li>
                           </ul>
                       </td>
                   </tr>
                   <tr>
-                    <td><a href="">Les Folles Nuits de Paname</a></td>
-                    <td>Mickael Rougé</td>
-                    <td>France</td>
+                    <td><a href="../pages/article_historique.html">Titre Livre 12</a></td>
+                    <td>Auteur 12</td>
+                    <td>Norvège</td>
                     <td>2021</td>
                       <td>
                           <ul>
-                              <li>Meilleur Roman Français</li>
-                              <li>Meilleur Roman Etranger</li>
-                              <li>Meilleur Documentaire</li>
                               <li>Meilleure Biographie</li>
                           </ul>
                       </td>
-                  </tr>
-                  <tr>
-                    <td><a href="">Les Folles Nuits de Paname</a></td>
-                    <td>Mickael Rougé</td>
-                    <td>France</td>
-                    <td>2021</td>
-                      <td>
-                          <ul>
-                              <li>Meilleur Roman Français</li>
-                              <li>Meilleur Roman Etranger</li>
-                              <li>Meilleur Documentaire</li>
-                              <li>Meilleure Biographie</li>
-                          </ul>
-                      </td>
-                  </tr>
-                  <tr>
-                    <td><a href="">Les Folles Nuits de Paname</a></td>
-                    <td>Mickael Rougé</td>
-                    <td>France</td>
-                    <td>2021</td>
-                      <td>
-                          <ul>
-                              <li>Meilleur Roman Français</li>
-                              <li>Meilleur Roman Etranger</li>
-                              <li>Meilleur Documentaire</li>
-                              <li>Meilleure Biographie</li>
-                          </ul>
-                      </td>
-                  </tr>
-                  <tr>
-                    <td><a href="">Les Folles Nuits de Paname</a></td>
-                    <td>Mickael Rougé</td>
-                    <td>France</td>
-                    <td>2021</td>
-                      <td>
-                          <ul>
-                              <li>Meilleur Roman Français</li>
-                              <li>Meilleur Roman Etranger</li>
-                              <li>Meilleur Documentaire</li>
-                              <li>Meilleure Biographie</li>
-                          </ul>
-                      </td>
-                  </tr>
-                  <tr>
-                    <td><a href="">Les Folles Nuits de Paname</a></td>
-                    <td>Mickael Rougé</td>
-                    <td>France</td>
-                    <td>2021</td>
-                      <td>
-                          <ul>
-                              <li>Meilleur Roman Français</li>
-                              <li>Meilleur Roman Etranger</li>
-                              <li>Meilleur Documentaire</li>
-                              <li>Meilleure Biographie</li>
-                          </ul>
-                      </td>
-                  </tr>
+                    </tr>
               </table>
         </article>
     </section>
 
-    
-
     <footer>
         <ul>
             <li class="first-part">
-                <a href="/accueil.html">BBiblio</a> 
+                <a href="../accueil.html">BBiblio</a> 
             </li>
             <li>Adresse : </li>
             <li>91 Avenue Henri Barbusse</li>
@@ -215,10 +247,10 @@
         </ul>
         <ul class="second-list">
             <li>
-                <a href="./pages/mentions_legales.html">Mentions Légales</a>
+                <a href="../pages/mentions_legales.html">Mentions Légales</a>
             </li>
             <li class="second-part">
-                <a href="./pages/politique_confidentialite.html">Politique De Confidentialité</a>
+                <a href="../pages/politique_confidentialite.html">Politique De Confidentialité</a>
             </li>
         </ul>
         <ul class="third-list">

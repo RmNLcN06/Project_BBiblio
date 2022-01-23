@@ -1,4 +1,4 @@
-/************** Partie Identification ****************/
+/************** Main Général ****************/
 // Variables
 var password = document.getElementsByClassName("password")[0];
 var show = document.getElementsByClassName("show")[0];
@@ -23,7 +23,9 @@ function showPassword() {
 */
 var verifRegEx = /^.*(?=.{10,})(?=.*[a-zA-Z])(?=.*\d).*$/;
 
-var msgValidationError = document.getElementsByClassName("msg-validation-error")[0];
+var msgValidationError = document.getElementsByClassName(
+  "msg-validation-error"
+)[0];
 var verifPassword = document.getElementsByClassName("verify")[0];
 var verifLogin = document.getElementsByClassName("log")[0];
 var loginKey = ["MonsieurX12345"];

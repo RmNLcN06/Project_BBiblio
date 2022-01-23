@@ -198,7 +198,7 @@ h4 {
 
 .wrapper legend {
   padding: 0px 15px;
-  margin: 0px auto;
+  margin: 40px auto;
 }
 
 .wrapper input,
@@ -206,7 +206,7 @@ h4 {
 .wrapper p {
   width: 300px;
   display: block;
-  margin: 30px auto;
+  margin: 15px auto;
 }
 
 .wrapper p,
@@ -231,6 +231,7 @@ h4 {
 
 .wrapper span {
   display: inline;
+  margin-left: 360px;
 }
 
 .wrapper .size-field {
