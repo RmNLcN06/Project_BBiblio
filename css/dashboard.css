@@ -248,8 +248,26 @@ table input[type="button"]:hover {
 }
 
 /***********************************************************************/
-/* Dashboard Auteur Style */
+/* Dashboard Comparaison Jure Style */
+.inputcategory {
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
 
+article.balance {
+  float: none;
+}
+
+.displayon {
+  display: "";
+}
+
+.displayoff {
+  display: none;
+}
 /***********************************************************************/
 /* Message Complétion Evaluation (Work with JavaScript) */
 

@@ -57,22 +57,23 @@
                     <legend>Informations De Participation</legend>
                     <fieldset class="first-line">
                         <legend>Informations Oeuvre</legend>
-                        <label for="lastname">Nom de l'oeuvre* : </label>
-                        <input class="lastname" type="text" name="lastname" required>
-                        <label for="firstname">Editeur* : </label>
-                        <input class="firstname" type="text" name="firstname" required>
-                        <label for="lastname">Nombre de pages* : </label>
-                        <input class="lastname" type="text" name="lastname" required>
-                        <label for="firstname">Date de parution* : </label>
-                        <input class="firstname" type="text" name="firstname" required>
-                        <label for="firstname">Code ISBN* : </label>
-                        <input class="firstname" type="text" name="firstname" required>
-                        <label class="myfile" for="myfile">Selectionner Votre Fichier (Format PDF):</label>
-                        <input type="file" id="myFile" name="filename" accept="application/pdf">
+                        <label class="bookname" for="bookname">Nom de l'oeuvre* : </label>
+                        <input class="bookname" type="text" name="bookname" required>
+                        <label class="editor"for="editor">Editeur* : </label>
+                        <input class="editor" type="text" name="editor" required>
+                        <label class="pagenumber" for="pagenumber">Nombre de pages* : </label>
+                        <input class="pagenumber" type="text" name="pagenumber" required>
+                        <label class="releasedate" for="releasedate">Date de parution* : </label>
+                        <input class="releasedate" type="text" name="releasedate" required>
+                        <label class="bookcode" for="bookcode">Code ISBN* : </label>
+                        <input class="bookcode" type="text" name="bookcode" required>
+                        <label class="origincountry" for="origincountry">Pays d'édition* : </label>
+                        <input class="origincountry" type="text" name="origincountry" required>
+                        
                     </fieldset>
                     <fieldset class="second-line">
                         <legend>Catégorie De Participation</legend>
-                        <label for="category">Veuillez choisir une catégorie : </label>
+                        <label for="category">Veuillez choisir une catégorie* : </label>
                         <input type="radio" name="category" value="french">
                         <label for="french">Meilleur Roman Français</label>
                         <input type="radio" name="category" value="foreign">
@@ -83,11 +84,9 @@
                         <label for="biography">Meilleur Biographie</label>
                     </fieldset>
                     <fieldset class="third-line">
-                        <legend>Informations Complémentaires</legend>
-                        <label for="phone">N° Téléphone: </label>
-                        <input class="phone" type="tel" name="phone">
-                        <label for="mail">Email* : </label>
-                        <input class="mail" type="email" name="mail" required>
+                        <legend>Transmission Du Livre</legend>
+                        <label class="myfile" for="myfile">Selectionner Votre Fichier (Format PDF):</label>
+                        <input type="file" id="myFile" name="filename" accept="application/pdf">
                     </fieldset>
                     <p>* : Champ Obligatoire</p>
                     <div class="msg-validation-error"></div>
@@ -142,6 +141,6 @@
 
     
     <!-- Main Files JavaScript -->
-    <script src="../js/profil_jure.js"></script>
+    <script src="../js/profil_auteur.js"></script>
 </body>
 </html>

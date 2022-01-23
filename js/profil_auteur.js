@@ -13,7 +13,7 @@ verify.addEventListener("click", timerChangePage);
 
 function timerChangePage() {
   msgValidationError.classList.add("validation");
-  msgValidationError.innerHTML = "Sauvegarde Réussie";
+  msgValidationError.innerHTML = "Sauvegarde Des Informations Réussie";
   intervalTimer = setTimeout(pageConnection, 3000);
 
   function pageConnection() {

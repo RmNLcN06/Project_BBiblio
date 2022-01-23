@@ -43,7 +43,6 @@ section {
 
 article {
   width: 90%;
-  height: 900px;
   margin: 0 auto;
 }
 
@@ -331,7 +330,7 @@ h4 {
 }
 
 article.news-actus {
-  height: 1300px;
+  width: 70%;
 }
 
 article img:first-of-type {
@@ -354,6 +353,24 @@ article h3 {
 
 article p {
   text-align: justify;
+  margin-bottom: 25px;
+}
+
+article a.buy {
+  margin-left: 595px;
+  text-decoration: none;
+  border: 2px solid maroon;
+  opacity: 0.4;
+  padding: 10px;
+  transition: var(--time-anim);
+}
+
+article a.buy:hover {
+  background-color: maroon;
+  color: var(--txt-clr-white);
+  padding: 5px;
+  border-radius: 5px;
+  opacity: 0.8;
 }
 
 /* Connexion Wrapper Style */
@@ -529,6 +546,39 @@ article p {
 }
 
 /* Inscrire Oeuvre Style*/
+label.bookname,
+label.pagenumber,
+label.bookcode {
+  margin-left: 160px;
+}
+
+label.releasedate {
+  margin-left: 12px;
+}
+
+label.editor {
+  margin-left: 25px;
+}
+
+label.origincountry {
+  margin-left: 70px;
+}
+
+label[for="category"] {
+  margin: 0px 380px;
+}
+
+input[value="french"] {
+  margin-left: 40px;
+}
+
+label[for="french"],
+label[for="foreign"],
+label[for="document"],
+label[for="biography"] {
+  margin-right: 25px;
+}
+
 label.myfile {
   margin: 210px 338px;
 }
