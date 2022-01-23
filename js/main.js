@@ -29,29 +29,38 @@ var msgValidationError = document.getElementsByClassName(
 var verifPassword = document.getElementsByClassName("verify")[0];
 var verifLogin = document.getElementsByClassName("log")[0];
 var loginKeyJudge = ["MonsieurJudge06"];
+var passwordJudge = ["Vousetesjure06"];
 var loginKeyAuthor = ["MonsieurAuthor06"];
+var passwordAuthor = ["Vousetesauteur06"];
 
 verifPassword.addEventListener("click", passwordCheck);
 
 function passwordCheck() {
   if (
-    (verifLogin.value == loginKeyJudge[0] ||
-      verifLogin.value == loginKeyAuthor[0]) &&
+    ((verifLogin.value == loginKeyJudge[0] &&
+      password.value == passwordJudge[0]) ||
+      (verifLogin.value == loginKeyAuthor[0] &&
+        password.value == passwordAuthor[0])) &&
     verifRegEx.test(password.value) == true
   ) {
     window.location.replace("./change_password.html");
   } else if (
-    (verifLogin.value != loginKeyJudge[0] ||
-      verifLogin.value != loginKeyAuthor[0]) &&
+    ((verifLogin.value != loginKeyJudge[0] &&
+      password.value == passwordJudge[0]) ||
+      (verifLogin.value != loginKeyAuthor[0] &&
+        password.value == passwordAuthor[0])) &&
     verifRegEx.test(password.value) == true
   ) {
     msgValidationError.classList.add("error");
     msgValidationError.innerHTML =
       "Identifiant Invalide. Veuillez Recommencer.";
   } else if (
-    (verifLogin.value == loginKeyJudge[0] ||
-      verifLogin.value == loginKeyAuthor[0]) &&
-    verifRegEx.test(password.value) != true
+    ((verifLogin.value == loginKeyJudge[0] &&
+      password.value != passwordJudge[0]) ||
+      (verifLogin.value == loginKeyAuthor[0] &&
+        password.value != passwordAuthor[0])) &&
+    (verifRegEx.test(password.value) != true ||
+      verifRegEx.test(password.value) == true)
   ) {
     msgValidationError.classList.add("error");
     msgValidationError.innerHTML =
